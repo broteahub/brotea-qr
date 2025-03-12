@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotea QR Codes Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #022922;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .qr-card {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .qr-card.original {
+            background-color: #E6FFA9;
+        }
+        .qr-card.inverted {
+            background-color: #022922;
+        }
+        .qr-card h2 {
+            margin-bottom: 20px;
+        }
+        .original h2 {
+            color: #022922;
+        }
+        .inverted h2 {
+            color: #E6FFA9;
+        }
+        .qr-image {
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        .url {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .original .url {
+            color: #022922;
+        }
+        .inverted .url {
+            color: #E6FFA9;
+        }
+        .instructions {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .original .instructions {
+            color: #022922;
+        }
+        .inverted .instructions {
+            color: #E6FFA9;
+        }
+        .download-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .original .download-btn {
+            background-color: #022922;
+            color: #E6FFA9;
+        }
+        .inverted .download-btn {
+            background-color: #E6FFA9;
+            color: #022922;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brotea QR Codes - Color Variations</h1>
+    
+    <div class="container">
+        <div class="qr-card original">
+            <h2>Original Colors</h2>
+            <img src="brotea-qr.png" alt="QR Code for Brotea Linktree - Original Colors" class="qr-image">
+            <div class="url">https://linktr.ee/brotea</div>
+            <div class="instructions">
+                <p>Dark green (#022922) dots on light green/yellow (#E6FFA9) background</p>
+            </div>
+            <a href="brotea-qr.png" download class="download-btn">Download</a>
+        </div>
+        
+        <div class="qr-card inverted">
+            <h2>Inverted Colors</h2>
+            <img src="brotea-qr-inverted.png" alt="QR Code for Brotea Linktree - Inverted Colors" class="qr-image">
+            <div class="url">https://linktr.ee/brotea</div>
+            <div class="instructions">
+                <p>Light green/yellow (#E6FFA9) dots on dark green (#022922) background</p>
+            </div>
+            <a href="brotea-qr-inverted.png" download class="download-btn">Download</a>
+        </div>
+    </div>
+    
+    <div style="margin: 30px 0; text-align: center; color: #555;">
+        <p>Scan either QR code with your smartphone camera to visit Brotea's Linktree page.</p>
+        <p>Click the Download button to save the QR code image for printing or sharing.</p>
+    </div>
+</body>
+</html>
